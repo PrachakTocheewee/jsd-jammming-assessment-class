@@ -18,7 +18,7 @@ class App extends React.Component {
         { name: 'name2', artist: 'artist2', album: 'album2', id: 2 },
         { name: 'name3', artist: 'artist3', album: 'album3', id: 3 },
       ],
-      playlistName: "My Playlist",
+      playlistName: 'My Playlist',
       playlistTracks: [
         {
           name: 'playlistName1',
@@ -37,9 +37,8 @@ class App extends React.Component {
           artist: 'playlistArtist3',
           album: 'playlistAlbum3',
           id: 6,
-        },
-      ],
-    };
+        }]
+    }
   }
   render() {
     return (
