@@ -10,14 +10,14 @@ class TrackList extends React.Component {
     return (
       <div className="TrackList">
         {
-          this.props.tracks.map(track => {
-          return <Track track={track} 
-          key={track.id} />
-        })
+            this.props.tracks.map(track => {
+            return <Track track={track} 
+            key={track.id} />
+            })
         }
       </div>
     )
-  }
+  }                                                          
 }
 
 export default TrackList;
