@@ -2,7 +2,7 @@
 const clientId = "b2592ea953504e46bafdef956d077f24";
 
 
-const redirectUri = "http://127.0.0.1:5174/";
+const redirectUri = "http://prachak32-jammming.surge.sh";
 const spotifyUrl = `https://accounts.spotify.com/authorize?response_type=token&scope=playlist-modify-public&client_id=${clientId}&redirect_uri=${redirectUri}`;
 
 let accessToken;
