@@ -9,7 +9,7 @@ import SearchResults from "../SearchResults/SearchResults";
 import Playlist from "../Playlist/Playlist";
 
 //import Spotify
-//import Spotify from "../../utils/Spotify";
+
 import Spotify from "../../utils/Spotify";
 
 class App extends React.Component {
@@ -54,7 +54,7 @@ class App extends React.Component {
     const trackUris = this.state.playlistTracks.map((track) => track.uri);
     Spotify.savePlaylist(this.state.playlistName,trackUris).then(() =>{
       this.setState({
-        playlistName:"Newplaylist",
+        playlistName:"New playlist",
         playlistTracks:[]
       })
     })
@@ -64,6 +64,10 @@ class App extends React.Component {
     Spotify.search(term).then(searchResults  =>{
     this.setState({searchResults :searchResults });
     })
+  }
+
+  componentDidMount(){
+  Spotify.getAccessToken();
   }
 
   render() {
